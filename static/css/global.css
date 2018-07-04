@@ -955,10 +955,16 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .icons-category{width: 12px; height: 13px; background-image: url(../images/icons-category.png); }
 .icons-link{width: 12px; height: 12px; background-image: url(../images/icons-link.png); }
 .icons-phone{width: 15px; height: 15px; background-image: url(../images/icons-phone.png); }
+.icons-leftarrow{width: 9px; height: 17px; background-image: url(../images/icons-leftarrow.png); }
+.icons-share{width: 15px; height: 17px; background-image: url(../images/icons-share.png); }
 .icons-company-tit{width: 12px; height: 12px; background-image: url(../images/icons-company-tit.png); }
 .icons-news-tit{width: 13px; height: 14px; background-image: url(../images/icons-news-tit.png); }
 .icons-product-tit{width: 13px; height: 14px; background-image: url(../images/icons-product-tit.png); }
 .icons-choice-tit{width: 13px; height: 12px; background-image: url(../images/icons-choice-tit.png); }
+.icons-content-tit{width: 12px; height: 14px; background-image: url(../images/icons-content-tit.png); }
+.icons-partner-tit{width: 12px; height: 12px; background-image: url(../images/icons-partner-tit.png); }
+.icons-params-tit{width: 13px; height: 13px; background-image: url(../images/icons-params-tit.png); }
+.icons-category-tit{width: 13px; height: 19px; background-image: url(../images/icons-category-tit.png); }
 .icons-home{ width: 21px; height: 21px; background-image: url(../images/nav.png); background-position: 0 0; background-size: 105px 42px;}
 .icons-introduce{ width: 21px; height: 21px; background-image: url(../images/nav.png); background-position: -21px 0; background-size: 105px 42px;}
 .icons-product{ width: 21px; height: 21px; background-image: url(../images/nav.png); background-position: -42px 0; background-size: 105px 42px;}
@@ -1084,7 +1090,7 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .email-logo{ height: 60px; line-height: 60px; background: #fff; padding-left: .5rem; padding-right: .5rem; vertical-align: middle; overflow: hidden;}
 .email-logo .logo{ float: left; margin-top: 17px; height: 25px;}
 .email-logo .qrcode{ float: right; margin-top: 5px; height: 50px;}
-
+.email-banner{ width: 100%; margin:.5rem 0; height: 164px; background-position: center center; background-repeat: no-repeat;  background-size: cover;}
 .email-product{ padding-left: .5rem; padding-right: .5rem;}
 .email-product li{ background: #fff; margin-bottom: .5rem;}
 .email-product li .img{ width: 100%; height: 115px; overflow: hidden;}
@@ -1094,7 +1100,7 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .email-news li .img{ float: left; margin-left: -135px; width: 125px; height: 75px; overflow: hidden;}
 .email-news li .img img{ width: 100%; height: 100%;}
 .email-news li .tit{ padding-top: .5rem; color: #424242;}
-
+/* 合作伙伴 */
 .partner-inner{ background: #fff; padding: .5rem;}
 .partner{ border: 1px solid #e5e5e5; overflow: hidden;}
 .partner .partner-ico{ float: left; width: 33.33%; height: 3.5rem; line-height: 3.5rem; text-align: center; border-left: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5;}
@@ -1110,7 +1116,7 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .icons-cmb{ background-position: 0 -70px}
 .icons-cctv{ background-position: -100px -70px}
 .icons-beijing-university{ background-position: -200px -70px}
-
+/* 底部 */
 .footer{ margin-top: .5rem; background: #333; padding: .5rem;}
 .quick-link{ overflow: hidden;}
 .quick-link a{ display: block; float: left; width: 25%; padding: .5rem; text-align: center;border-left: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5;}
@@ -1120,7 +1126,6 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .quick-link a:nth-of-type(4){border-top: 0;}
 .quick-link a:nth-of-type(5),
 .quick-link a:nth-of-type(9){border-left: 0;}
-
 .quick-link a .icons{ display: inline-block; width:30px; height: 27px; background-image: url(../images/footer.png); background-size: 210px 27px;}
 .icons-fhome{ background-position: 0 0}
 .icons-fproduct{ background-position: -30px 0}
@@ -1136,7 +1141,68 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 
 /* 产品详细 */
 .top-head{ position: relative; height: 42px; line-height: 42px; background: #f2f2f2; padding-left: .5rem; padding-right: .5rem;}
-.top-head .tit{ display: block; width: 100%; text-align: center;}
+.top-head .tit{position: absolute; left: 0; display: block; width: 100%; text-align: center; font-size: .8rem; font-weight: normal;}
+.product-detail-banner{width: 100%; margin:0; height: 314px; background-position: center center; background-repeat: no-repeat;  background-size: cover;}
+.product-detail-trunk{ padding: .5rem; line-height: 70px; background-color: #fff; overflow: hidden;}
+.product-detail-trunk .tit{ float: left; width: 60%; padding-right: .5rem; border-right: 1px solid #e5e5e5; line-height: normal; font-weight: normal;}
+.product-detail-trunk .price{ float: right; color: #f00;}
+.contrast{ margin-top: .5rem; background-color: #fff; }
+.contrast-li{ height: 50px; line-height: 30px; padding: .5rem; padding-left:48px;  border-bottom: 1px solid #e5e5e5; overflow: hidden;}
+.contrast-li .icons{ float: left; margin-left: -38px; width: 28px; height: 28px; background-image: url(../images/icons-shops.png); background-repeat: no-repeat; background-size: 28px 84px;}
+.contrast-li .icons-suning{ background-position: 0 0;}
+.contrast-li .icons-jingdong{background-position: 0 -28px;}
+.contrast-li .icons-guomei{background-position: 0 -56px;}
+.contrast-li .name{ color: #707070;}
+.contrast-li .price{ float: right; font-size: 1rem; font-weight: 500; color: #f00;}
+.evaluating{ margin-top: .5rem;}
+.evaluating a{ display: block; background: #fff; height: 40px; margin-bottom: .25rem; line-height: 40px; padding: 0 .5rem; color: #707070; text-align: left; }
+.evaluating a .mark{ display: inline-block; float: left; padding: 2px 5px;margin-right: .5rem; margin-top: .5rem;  border-radius:3px;background:#8bc121;color: #fff; line-height: normal; font-size: .6rem;}
+.evaluating a .txt{ display: inline-block; font-size: .6rem; margin-left: 2px;  width: 75%; white-space: nowrap;  overflow: hidden;text-overflow: ellipsis;}
+.evaluating a .icons{ float: right; margin-top:.6rem;transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+/* 重点参数 */
+.params-items{ background: #fff; padding: .5rem;}
+.params-items li{ padding-left: 40px; margin-bottom: .75rem; overflow: hidden;}
+.params-items li .icons{ float: left; margin-left: -40px; width: 30px; height: 30px; background-image: url(../images/icons-pramse.png); background-repeat: no-repeat; background-size: 180px 30px;}
+.params-items li .icons-params01{ background-position: 0 0}
+.params-items li .icons-params02{ background-position: -30px 0;}
+.params-items li .icons-params03{background-position: -60px 0;}
+.params-items li .icons-params04{background-position: -90px 0;}
+.params-items li .icons-params05{background-position: -120px 0;}
+.params-items li .icons-params06{background-position: -150px 0;}
+.params-items li p{ line-height: 15px; font-size: .6rem; color: #707070}
+.params-items .button{ margin-left: auto; margin-right: auto; width: 200px; height: 27px; background: #f2f2f2; border: 0; border-radius: 27px; line-height: 27px; text-align: center; color: #707070;}
+/* 评价 */
+.evaluate{ margin-top: .5rem; margin-bottom: .5rem; height: 40px; line-height: 40px; background: #fff; padding-left: .5rem; padding-right: .5rem;}
+.evaluate a{ display: block;}
+.evaluate a .txt{ float: left; color: #444;}
+.evaluate a .star-items{ float: right;}
+.evaluate a .star-items .icons{ width: 17.5px; height: 17.5px; background: url(../images/icons-star-view.png) 0 0 no-repeat; background-size: 35px 17.5px}
+.evaluate a .star-items.star1  .icons:nth-of-type(1),
+.evaluate a .star-items.star2  .icons:nth-of-type(1),
+.evaluate a .star-items.star2  .icons:nth-of-type(2),
+.evaluate a .star-items.star3  .icons:nth-of-type(1),
+.evaluate a .star-items.star3  .icons:nth-of-type(2),
+.evaluate a .star-items.star3  .icons:nth-of-type(3),
+.evaluate a .star-items.star4  .icons:nth-of-type(1),
+.evaluate a .star-items.star4  .icons:nth-of-type(2),
+.evaluate a .star-items.star4  .icons:nth-of-type(3),
+.evaluate a .star-items.star4  .icons:nth-of-type(4),
+.evaluate a .star-items.star5  .icons:nth-of-type(1),
+.evaluate a .star-items.star5  .icons:nth-of-type(2),
+.evaluate a .star-items.star5  .icons:nth-of-type(3),
+.evaluate a .star-items.star5  .icons:nth-of-type(4),
+.evaluate a .star-items.star5  .icons:nth-of-type(5){ background-position: -17.5px 0}
+/* 其他产品 */
+.other-product{ background: #fff; padding: .5rem;margin-bottom: .5rem; overflow: hidden; overflow-x: auto;}
+.other-product li{ float: left; width: 196px; margin-right: .5rem; box-shadow: 2px 2px 2px #ccc;}
+.other-product li a{ display: block; color: #333;}
+.other-product li .img{ width: 196px; height: 148px; overflow: hidden;}
+.other-product li .img img{ width: 100%; height: 100%;}
+.other-product li .name{ margin-top: .25rem; height: 30px; line-height: 15px; padding-left: .5rem; padding-right: .5rem; font-size: .6rem}
+.other-product li .price{ margin-top: .25rem; padding-left: .5rem; padding-right: .5rem; font-size: .6rem; color: #f00;}
+
+
+
 
 
 
