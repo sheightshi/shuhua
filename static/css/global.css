@@ -1194,6 +1194,7 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .evaluate a .star-items.star5  .icons:nth-of-type(5){ background-position: -17.5px 0}
 /* 其他产品 */
 .other-product{ background: #fff; padding: .5rem;margin-bottom: .5rem; overflow: hidden; overflow-x: auto;}
+.other-product ul{ overflow: hidden;}
 .other-product li{ float: left; width: 196px; margin-right: .5rem; box-shadow: 2px 2px 2px #ccc;}
 .other-product li a{ display: block; color: #333;}
 .other-product li .img{ width: 196px; height: 148px; overflow: hidden;}
