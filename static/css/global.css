@@ -1278,7 +1278,6 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .evaluate-star-items .star-items.star5  .icons:nth-of-type(4),
 .evaluate-star-items .star-items.star5  .icons:nth-of-type(5){ background-position: 0 0}
 
-
 /*
  * 媒体查询（尽可能放在相关规则附近）
  */
