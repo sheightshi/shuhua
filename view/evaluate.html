@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>评价</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="../static/images/favicon.ico" rel="Shortcut Icon">
+    <link href="../static/css/global.css" rel="stylesheet">
+</head>
+<body>
+<div class="global">
+    <div class="page page-current page-evaluate" id="page_evaluate">
+        <header class="bar bar-nav" id="header">
+            <a href="javascript:;" title="" class="external pull-left"><i class="icons icons-leftarrow"></i> </a>
+            <h1 class="title">我要评价</h1>
+            <a href="javascript:;" title="" class="external pull-right"><i class="icons icons-share"></i> </a>
+        </header>
+        <div class="content" id="content">
+            <div class="evaluate-input">
+                <div class="evaluate-quick">
+                    <button type="button" class="button">快速点评</button>
+                    <button type="button" class="button active">高级点评</button>
+                </div>
+                <div class="evaluate-level">
+                    <div class="img"><img src="../static/temp/product04.jpg"> </div>
+                    <div class="evaluate-level-items">
+                        <p class="level-items active">
+                            <i class="icons icons-best"></i>
+                            <span class="txt">好评</span>
+                        </p>
+                        <p class="level-items">
+                            <i class="icons icons-middle"></i>
+                            <span class="txt">中评</span>
+                        </p>
+                        <p class="level-items">
+                            <i class="icons icons-bad"></i>
+                            <span class="txt">差评</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="evaluate-content">
+                    <textarea class="textarea" placeholder="宝贝还满意吗？说说它的优点和不足吧"></textarea>
+                </div>
+                <div class="evaluate-upload">
+                    <div class="evaluate-upload-btn"><button class="button picture-upload" type="button " id="picture_upload">添加照片</button> </div>
+                    <div class="evaluate-upload-btn"><button class="button video-upload" type="button" id="video_upload">添加视频</button> </div>
+                </div>
+            </div>
+            <div class="evaluate-star">
+                <div class="evaluate-star-items">
+                    <span class="tit">外观设计</span>
+                    <div class="star-items star5">
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                    </div>
+                </div>
+                <div class="evaluate-star-items">
+                    <span class="tit">屏幕效果</span>
+                    <div class="star-items star4">
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                    </div>
+                </div>
+                <div class="evaluate-star-items">
+                    <span class="tit">散热效果</span>
+                    <div class="star-items star3">
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                    </div>
+                </div>
+                <div class="evaluate-star-items">
+                    <span class="tit">快递服务</span>
+                    <div class="star-items star2">
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                        <i class="icons icons-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../static/js/zepto.min.js"></script>
+<script src="../static/js/zepto.modules.js"></script>
+<script src="../static/js/global.js"></script>
+<script src="../static/js/webuploader.js"></script>
+<script src="../static/js/WebUpload.js" ></script>
+<script>
+    $(function(){
+
+        // 图片上传
+        $("#picture_upload").InitWebUpload({
+            btntext: "图片上传",
+            multiple: false,
+            water: false,
+            filename : "file",
+            thumbnail: false,
+            sendurl: '上传到URL地址',
+            filequeued : function (file) {
+
+                // 文件选中之后
+                var $li = $('<div class="upload-item" id="' + file.id + '">'+
+                    '<img src="">'+
+                    '<span class="close"></span>'+
+                    '</div>');
+
+                // 上传展示
+                $("#contract_photo_list").prepend( $li );
+            },
+            uploadsuccess : function (file,response) {
+                if(response.code=="0"){
+
+                }else{
+                    $.toast("上传失败");
+                    $( '#'+file.id ).remove();
+                }
+            },
+        });
+
+        // 视频上传
+        $("#video_upload").InitWebUpload({
+            btntext: "视频上传",
+            multiple: false,
+            water: false,
+            filename : "file",
+            thumbnail: false,
+            filetypes: '3gp,mp4,rmvb,mov,avi,m4v',
+            mimetypes: 'video/*,audio/*,application/*',
+            sendurl: '上传到URL地址',
+            filequeued : function (file) {
+                // 文件选中之后
+                var $li = $('<div class="upload-item" id="' + file.id + '">'+
+                    '<img src="">'+
+                    '<span class="close"></span>'+
+                    '</div>');
+
+                // 上传展示
+                $("#contract_photo_list").prepend( $li );
+            },
+            uploadsuccess : function (file,response) {
+                if(response.code=="0"){
+                    // 上传成功
+                }else{
+                    $.toast("上传失败");
+                    $( '#'+file.id ).remove();
+                }
+            },
+        });
+
+
+        // 评价分数
+        $(document).on("click",".star-items .icons",function () {
+            var thisindex = $(this).index()+1;
+            $(this).parent().removeClass("star1 star2 star3 star4 star5");
+            $(this).parent().addClass("star"+thisindex);
+        });
+    })
+</script>
+</body>
+</html>

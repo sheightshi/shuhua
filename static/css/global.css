@@ -955,6 +955,9 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .icons-category{width: 12px; height: 13px; background-image: url(../images/icons-category.png); }
 .icons-link{width: 12px; height: 12px; background-image: url(../images/icons-link.png); }
 .icons-phone{width: 15px; height: 15px; background-image: url(../images/icons-phone.png); }
+.icons-mobile{width: 13px; height: 11px; background-image: url(../images/icons-mobile.png); }
+.icons-fax{width: 12px; height: 12px; background-image: url(../images/icons-fax.png); }
+.icons-email{width: 12px; height: 9px; background-image: url(../images/icons-email.png); }
 .icons-leftarrow{width: 9px; height: 17px; background-image: url(../images/icons-leftarrow.png); }
 .icons-share{width: 15px; height: 17px; background-image: url(../images/icons-share.png); }
 .icons-company-tit{width: 12px; height: 12px; background-image: url(../images/icons-company-tit.png); }
@@ -1031,12 +1034,15 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .label-check input[type=checkbox]{ width: 16px; height: 16px;    vertical-align: text-top;}
 
 /* 内容板块标题 */
-.content-title{ background: #fff; height: 40px; margin-bottom: .25rem; line-height: 40px; font-size: .8rem; color: #8bc121; text-align: center;}
+.content-title{ background: #fff; height: 40px; margin-bottom: .25rem;margin-top: .25rem; line-height: 40px; font-size: .8rem; color: #8bc121; text-align: center;}
 .content-title .icons{ margin-right: .2rem;}
 
 
 /* 2.0 站点
 ---------------------------------------------------------- */
+/***
+ *   首页页面相关
+ **/
 /* 公司介绍相关 */
 .company-trunk{ background: #fff; padding-top: 2rem; text-align: center;}
 .company-trunk .tit{ display: block; color: #333; font-size: 1rem;}
@@ -1047,13 +1053,21 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .company-trunk .company-info li .icons{ margin-right: .2rem;}
 .company-trunk .company-info li .val,
 .company-trunk .company-info li a{ color: #333;}
+.company-info-inner ul{}
+.company-info-inner li{ height: 34px; line-height: 34px; background: #fff; margin-bottom: .25rem; padding-left: .5rem; padding-right: .5rem;}
+.company-info-inner li .icons{ margin-right: .2rem;}
+.company-info-inner li .val,
+.company-info-inner li a.external.link{ color: #333;}
+
 /* 简介 */
-.company-introduce{ position: relative; margin-top: -.25rem; background: #eee; padding-left:.5rem; padding-bottom: .5rem; margin-bottom: .5rem; }
+.company-introduce{ position: relative; margin-top: -.25rem; background: #eee; padding-left:.5rem; padding-bottom: .5rem;}
 .company-introduce .img{ width: 209px; height: 183px; background: url(../images/introduce.jpg) 0 0 no-repeat; background-size: cover;}
 .company-introduce .dec{ position: absolute; top: .5rem; right: 0; width: 60%; padding: .25rem; background: rgba(255,255,255,.9); color: #333;}
 @media screen and (max-width: 374px){  .company-introduce .dec{ font-size: .6rem}}
 @media screen and (min-width: 374px){  .company-introduce .dec{ font-size: .65rem}}
 .company-introduce .dec a{ color: #8bc121;}
+.company-introduce-dec{ padding: .5rem; background: #fff;  color: #424242;}
+.company-introduce-dec .tit{ display: block; margin: .5rem 0; font-size:.8rem; font-weight: 400;}
 
 /* 产品tab */
 /*.product-tab{ background: #fff;}*/
@@ -1082,7 +1096,9 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .choice-list li .img img{  width: 100%;  height: 100%; vertical-align: middle;}
 .choice-list li .tit{ position: absolute; bottom: 0; left: 0; right: 0; width: 100%; height: 35px; line-height: 35px; background: rgba(0,0,0,.8); padding-left: .5rem; padding-right: .5rem; border-radius: 10px; white-space: nowrap; color: #fff; overflow: hidden; text-overflow: ellipsis;}
 
-/* 邮箱相关 */
+/***
+ *   邮箱页面相关
+ **/
 .email-prompt{ height:  45px; line-height: 45px; padding-left: .5rem; padding-right: .5rem; overflow: hidden;}
 .email-prompt .txt{ float: left; font-size: .6rem; color: #333;}
 .email-prompt .txt a{ color: #333; text-decoration: underline;}
@@ -1139,7 +1155,9 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .footer .copyright{ margin-top: 1rem; padding-top: 1rem; margin-left: -.5rem ; margin-right: -.5rem; border-top:1px solid #e5e5e5; font-size: .6rem; color: #fff; text-align: center;}
 .footer .telephone{ margin-top: .25rem; text-align: center; font-size: .6rem; color: #fff;}
 
-/* 产品详细 */
+/***
+ *   产品详细页面
+ **/
 .top-head{ position: relative; height: 42px; line-height: 42px; background: #f2f2f2; padding-left: .5rem; padding-right: .5rem;}
 .top-head .tit{position: absolute; left: 0; display: block; width: 100%; text-align: center; font-size: .8rem; font-weight: normal;}
 .product-detail-banner{width: 100%; margin:0; height: 314px; background-position: center center; background-repeat: no-repeat;  background-size: cover;}
@@ -1171,7 +1189,14 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .params-items li .icons-params06{background-position: -150px 0;}
 .params-items li p{ line-height: 15px; font-size: .6rem; color: #707070}
 .params-items .button{ margin-left: auto; margin-right: auto; width: 200px; height: 27px; background: #f2f2f2; border: 0; border-radius: 27px; line-height: 27px; text-align: center; color: #707070;}
-/* 评价 */
+.params-model{ background: #fff; top: initial; bottom: 0; left: 0; right: 0; width: 100%; margin-left: 0 !important; margin-top: 0 !important; border-radius: .5rem .5rem 0 0;}
+.params-model .modal-inner {  background: #fff; border-radius: .5rem .5rem 0 0; }
+.params-model .modal-title { height: 40px; line-height: 40px;}
+.params-more-list{margin-left: -.5rem; margin-right: -.5rem; text-align: left;}
+.params-li{    height: 32px;line-height: 32px;padding: 0 .5rem; border-top: 1px solid #e6e6e6}
+.params-li .lab{ color: #707070; }
+.params-li .val{ color: #909090}
+/* 详细评价 */
 .evaluate{ margin-top: .5rem; margin-bottom: .5rem; height: 40px; line-height: 40px; background: #fff; padding-left: .5rem; padding-right: .5rem;}
 .evaluate a{ display: block;}
 .evaluate a .txt{ float: left; color: #444;}
@@ -1202,9 +1227,56 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .other-product li .name{ margin-top: .25rem; height: 30px; line-height: 15px; padding-left: .5rem; padding-right: .5rem; font-size: .6rem}
 .other-product li .price{ margin-top: .25rem; padding-left: .5rem; padding-right: .5rem; font-size: .6rem; color: #f00;}
 
-
-
-
+/***
+ *   评价页面
+ **/
+.global .page-evaluate .bar-nav{ background: #f2f2f2;}
+.global .page-evaluate .bar-nav .title{ color: #707070}
+.evaluate-input{ background: #fff; padding: .5rem;}
+.evaluate-quick .button{ display: inline-block; margin-right: .25rem; padding: 2px 12px; background: #f2f2f2; color: #707070;  border: 0; border-radius: 20px;}
+.evaluate-quick .button.active{ background:#8bc121; color:#fff}
+.evaluate-level{ margin-top: .5rem; overflow: hidden;}
+.evaluate-level .img{ float: left; width: 50px; height: 50px; overflow: hidden;}
+.evaluate-level .img img{ width: 100%;}
+.evaluate-level-items{ float: left;}
+.evaluate-level-items .level-items{ display: inline-block;}
+.evaluate-level-items .level-items .icons{}
+.evaluate-level-items .level-items .icons-best{}
+.evaluate-level-items .level-items .icons-middle{}
+.evaluate-level-items .level-items .icons-bad{}
+.evaluate-level-items .level-items .txt{ color: #707070}
+.evaluate-level-items .level-items.active .txt{ color: #8bc121}
+.evaluate-level-items .level-items.active .icons-best{}
+.evaluate-level-items .level-items.active .icons-middle{}
+.evaluate-level-items .level-items.active .icons-bad{}
+.evaluate-content{ margin-top: .5rem; margin-left: -.5rem; margin-right: -.5rem; padding: .5rem; border-top: 1px solid #e5e5e5;}
+.evaluate-content .textarea{ border: 0; width: 100%; height: 80px;resize: none;}
+.evaluate-upload{ margin-top: .5rem;}
+.evaluate-upload .evaluate-upload-btn{ display: inline-block;}
+.evaluate-upload .evaluate-upload-btn .button{ border: 0; width: 66px; height: 66px; background: url(../images/icons-upload.png) 0 0 no-repeat; background-size: 132px 66px; text-indent: 9999px;}
+.evaluate-upload .evaluate-upload-btn .video-upload{ background-position:  -66px 0}
+.evaluate-upload .evaluate-upload-btn .picture-upload{background-position:0 0}
+.evaluate-star{ margin-top: .5rem; padding: .5rem; background: #fff;}
+.evaluate-star-items{ line-height: 30px; margin-bottom: .25rem}
+.evaluate-star-items:last-child{ margin-bottom: 0;}
+.evaluate-star-items .tit{ display: inline-block;vertical-align: middle;}
+.evaluate-star-items .star-items{ display: inline-block; margin-left: .25rem;}
+.evaluate-star-items .star-items .icons{ width: 30px; height: 29px;  background: url(../images/icons-star.png) -30px 0 no-repeat; background-size: 60px 29px}
+.evaluate-star-items .star-items.star1  .icons:nth-of-type(1),
+.evaluate-star-items .star-items.star2  .icons:nth-of-type(1),
+.evaluate-star-items .star-items.star2  .icons:nth-of-type(2),
+.evaluate-star-items .star-items.star3  .icons:nth-of-type(1),
+.evaluate-star-items .star-items.star3  .icons:nth-of-type(2),
+.evaluate-star-items .star-items.star3  .icons:nth-of-type(3),
+.evaluate-star-items .star-items.star4  .icons:nth-of-type(1),
+.evaluate-star-items .star-items.star4  .icons:nth-of-type(2),
+.evaluate-star-items .star-items.star4  .icons:nth-of-type(3),
+.evaluate-star-items .star-items.star4  .icons:nth-of-type(4),
+.evaluate-star-items .star-items.star5  .icons:nth-of-type(1),
+.evaluate-star-items .star-items.star5  .icons:nth-of-type(2),
+.evaluate-star-items .star-items.star5  .icons:nth-of-type(3),
+.evaluate-star-items .star-items.star5  .icons:nth-of-type(4),
+.evaluate-star-items .star-items.star5  .icons:nth-of-type(5){ background-position: 0 0}
 
 
 /*

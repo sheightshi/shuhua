@@ -99,7 +99,7 @@
                         <p>电容屏，多点触控</p>
                     </li>
                 </ul>
-                <button type="button" class="button">查看更多参数</button>
+                <button type="button" class="button" id="params_more">查看更多参数</button>
             </div>
             <div class="evaluate">
                 <a href="javascript:;" title="" class="external">
@@ -181,6 +181,52 @@
 <script type="text/javascript">
     $(function() {
 
+        // 更多产品参数
+        $(document).on('click','#params_more', function () {
+            $.modal({
+                title: '产品参数',
+                extraClass: 'params-model',
+                afterText:  '<div class="params-more-list">'+
+                '<p class="params-li">' +
+                '<span class="lab">上市时间 :  </span>' +
+                '<span class="val"> 2018年夏季</span>' +
+                '</p>'+
+                '<p class="params-li">' +
+                '<span class="lab">跑步机型号 :</span>' +
+                '<span class="val">  A5霸</span>' +
+                '</p>'+
+                '<p class="params-li">' +
+                '<span class="lab">峰值马力 :  </span>' +
+                '<span class="val"> 3.5hp</span>' +
+                '</p>'+
+                '<p class="params-li">' +
+                '<span class="lab">跑带宽度 :  </span>' +
+                '<span class="val"> 48-50cm（不含）</span>' +
+                '</p>'+
+                '<p class="params-li">' +
+                '<span class="lab">配送方式 :  </span>' +
+                '<span class="val">送货到家并安装</span>' +
+                '</p>'+
+                '<p class="params-li">' +
+                '<span class="lab">货号 :  </span>' +
+                '<span class="val"> A5霸</span>' +
+                '</p>'+
+                '<p class="params-li">' +
+                '<span class="lab">颜色分类 :  </span>' +
+                '<span class="val"> 蓝屏蓝牙版单功能 蓝屏蓝牙版</span>' +
+                '</p>'+
+                '<p class="params-li">' +
+                '<span class="lab">心率测试 :  </span>' +
+                '<span class="val"> 手握心率测试</span>' +
+                '</p>'+
+                '</div>'
+            });
+        });
+
+        // 点击关闭遮罩层
+        $(document).on("click",".modal-overlay",function () {
+            $.closeModal();
+        });
     });
 </script>
 </body>
