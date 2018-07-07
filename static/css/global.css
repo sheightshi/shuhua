@@ -1239,16 +1239,16 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .evaluate-level .img{ float: left; width: 50px; height: 50px; overflow: hidden;}
 .evaluate-level .img img{ width: 100%;}
 .evaluate-level-items{ float: left;}
-.evaluate-level-items .level-items{ display: inline-block;}
-.evaluate-level-items .level-items .icons{}
-.evaluate-level-items .level-items .icons-best{}
-.evaluate-level-items .level-items .icons-middle{}
-.evaluate-level-items .level-items .icons-bad{}
+.evaluate-level-items .level-items{ display: inline-block;margin-left: .5rem; margin-top: .25rem;}
+.evaluate-level-items .level-items .icons{ width: 32px; height: 32px; background: url(../images/icons-evaluate.png) no-repeat; background-size: 64px 64px;}
+.evaluate-level-items .level-items .icons-best{ background-position: 0 0 }
+.evaluate-level-items .level-items .icons-middle,
+.evaluate-level-items .level-items .icons-bad{background-position: -32px 0}
 .evaluate-level-items .level-items .txt{ color: #707070}
 .evaluate-level-items .level-items.active .txt{ color: #8bc121}
-.evaluate-level-items .level-items.active .icons-best{}
-.evaluate-level-items .level-items.active .icons-middle{}
-.evaluate-level-items .level-items.active .icons-bad{}
+.evaluate-level-items .level-items.active .icons-best{ background-position: 0 -32px}
+.evaluate-level-items .level-items.active .icons-middle,
+.evaluate-level-items .level-items.active .icons-bad{background-position: -32px -32px}
 .evaluate-content{ margin-top: .5rem; margin-left: -.5rem; margin-right: -.5rem; padding: .5rem; border-top: 1px solid #e5e5e5;}
 .evaluate-content .textarea{ border: 0; width: 100%; height: 80px;resize: none;}
 .evaluate-upload{ margin-top: .5rem;}
