@@ -1099,7 +1099,7 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 /***
  *   邮箱页面相关
  **/
-.email-prompt{ height:  45px; line-height: 45px; padding-left: .5rem; padding-right: .5rem; overflow: hidden;}
+/*.email-prompt{ height:  45px; line-height: 45px; padding-left: .5rem; padding-right: .5rem; overflow: hidden;}
 .email-prompt .txt{ float: left; font-size: .6rem; color: #333;}
 .email-prompt .txt a{ color: #333; text-decoration: underline;}
 .email-prompt .btn{ display: inline-block; float: right; margin-top: 10px; padding-left: .25rem; padding-right: .25rem; height: 22px; line-height: 22px; margin-left: .25rem; background: #333; font-size: .6rem; color: #fff; border-radius: 5px; text-align: center;}
@@ -1116,7 +1116,7 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .email-news li .img{ float: left; margin-left: -135px; width: 125px; height: 75px; overflow: hidden;}
 .email-news li .img img{ width: 100%; height: 100%;}
 .email-news li .tit{ padding-top: .5rem; color: #424242;}
-/* 合作伙伴 */
+!* 合作伙伴 *!
 .partner-inner{ background: #fff; padding: .5rem;}
 .partner{ border: 1px solid #e5e5e5; overflow: hidden;}
 .partner .partner-ico{ float: left; width: 33.33%; height: 3.5rem; line-height: 3.5rem; text-align: center; border-left: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5;}
@@ -1132,7 +1132,7 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .icons-cmb{ background-position: 0 -70px}
 .icons-cctv{ background-position: -100px -70px}
 .icons-beijing-university{ background-position: -200px -70px}
-/* 底部 */
+!* 底部 *!
 .footer{ margin-top: .5rem; background: #333; padding: .5rem;}
 .quick-link{ overflow: hidden;}
 .quick-link a{ display: block; float: left; width: 25%; padding: .5rem; text-align: center;border-left: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5;}
@@ -1153,7 +1153,7 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .quick-link a .txt{ margin-top: .25rem; font-size: .6rem; color: #fff;}
 .quick-link a .foot-qrcode{ height: 45px;}
 .footer .copyright{ margin-top: 1rem; padding-top: 1rem; margin-left: -.5rem ; margin-right: -.5rem; border-top:1px solid #e5e5e5; font-size: .6rem; color: #fff; text-align: center;}
-.footer .telephone{ margin-top: .25rem; text-align: center; font-size: .6rem; color: #fff;}
+.footer .telephone{ margin-top: .25rem; text-align: center; font-size: .6rem; color: #fff;}*/
 
 /***
  *   产品详细页面
