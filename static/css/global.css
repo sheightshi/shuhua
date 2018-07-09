@@ -9,12 +9,6 @@
 ---------------------------------------------------------- */
 /* 基础默认  */
 html {font-size:20px;}
-@media only screen and (min-width:400px) {html {font-size:21.33333333px !important;}
-}
-@media only screen and (min-width:414px) {html {font-size:22.08px !important;}
-}
-@media only screen and (min-width:480px) {html {font-size:25.6px !important;}
-}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html {font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
 body {margin:0;}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {display:block;}
@@ -913,7 +907,7 @@ html.with-statusbar-overlay .photo-browser {height:-webkit-calc(100% - 1rem);hei
 /* 通用布局  */
 ul,li { list-style: none; margin: 0; padding: 0; }
 h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
-.global {position:relative; height: 100%; min-width: 320px}
+.global {position:relative; height: 100%; min-width: 320px; max-width: 640px; margin-left: auto; margin-right: auto;}
 .content-block-bg{ background:#fff;}
 .content-block-tabs{ background-color:#fff;}
 ::-webkit-input-placeholder { color:#b3b3b3;}
@@ -1164,6 +1158,7 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .product-detail-trunk{ padding: .5rem; line-height: 70px; background-color: #fff; overflow: hidden;}
 .product-detail-trunk .tit{ float: left; width: 60%; padding-right: .5rem; border-right: 1px solid #e5e5e5; line-height: normal; font-weight: normal;}
 .product-detail-trunk .price{ float: right; color: #f00;}
+.product-detail-trunk .price em{ font-style: normal; font-size: 1rem; font-weight: 500;}
 .contrast{ margin-top: .5rem; background-color: #fff; }
 .contrast-li{ height: 50px; line-height: 30px; padding: .5rem; padding-left:48px;  border-bottom: 1px solid #e5e5e5; overflow: hidden;}
 .contrast-li .icons{ float: left; margin-left: -38px; width: 28px; height: 28px; background-image: url(../images/icons-shops.png); background-repeat: no-repeat; background-size: 28px 84px;}
@@ -1171,7 +1166,7 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
 .contrast-li .icons-jingdong{background-position: 0 -28px;}
 .contrast-li .icons-guomei{background-position: 0 -56px;}
 .contrast-li .name{ color: #707070;}
-.contrast-li .price{ float: right; font-size: 1rem; font-weight: 500; color: #f00;}
+.contrast-li .price{ float: right;font-weight: 500; color: #f00;}
 .evaluating{ margin-top: .5rem;}
 .evaluating a{ display: block; background: #fff; height: 40px; margin-bottom: .25rem; line-height: 40px; padding: 0 .5rem; color: #707070; text-align: left; }
 .evaluating a .mark{ display: inline-block; float: left; padding: 2px 5px;margin-right: .5rem; margin-top: .5rem;  border-radius:3px;background:#8bc121;color: #fff; line-height: normal; font-size: .6rem;}
